@@ -1,0 +1,105 @@
+<html>
+    <head>
+    <!--  Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+        
+    <!-- JQUERY LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/theBoot/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/theBoot/css/font-awesome.css">
+    <!-- CUSTOME CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/landingPage.css"></link>
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css"></link>
+    <link rel="stylesheet" type="text/css" href="../assets/css/patient.css"></link>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script href="../assets/theBoot/js/bootstrap.js"></script>
+
+    	<title>Scope!</title>
+    </head>
+    <body id="seek-txt">
+
+        <div class="container-fluid">
+            <div class="row">
+                <section id="seek-top" class="scnav">
+                     
+                    <div class="col-md-5 dropdown">
+  <button class="btn-seek dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    <img class="seek-logo" src="../assets/imgs/Seek-Heartv2.png">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dr. Who</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Home</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign Out</a></li>
+      
+  </ul>
+</div>
+                    <div class="col-md-2">
+                        <h1 class="text-center toptext"> Patient</h1>
+                    </div>
+                   </section>
+            </div>
+            <div class="row">
+              <div id="seek-main" class="mcontent">
+      <form method="get" action="/search" id="search">
+  <input name="q" type="text" size="40" placeholder="Search..." />
+</form>
+                    
+                
+<!--End of mainc-->
+          </div> 
+<script>
+              
+               $(function () {
+		function closeSearch() {
+            var $form = $('.navbar-collapse form[role="search"].active')
+    		$form.find('input').val('');
+			$form.removeClass('active');
+		}
+
+		// Show Search if form is not active // event.preventDefault() is important, this prevents the form from submitting
+		$(document).on('click', '.navbar-collapse form[role="search"]:not(.active) button[type="submit"]', function(event) {
+			event.preventDefault();
+			var $form = $(this).closest('form'),
+				$input = $form.find('input');
+			$form.addClass('active');
+			$input.focus();
+		});
+		// ONLY FOR DEMO // Please use $('form').submit(function(event)) to track from submission
+		// if your form is ajax remember to call `closeSearch()` to close the search container
+		$(document).on('click', '.navbar-collapse form[role="search"].active button[type="submit"]', function(event) {
+			event.preventDefault();
+			var $form = $(this).closest('form'),
+				$input = $form.find('input');
+			$('#showSearchTerm').text($input.val());
+            closeSearch()
+		});
+    });
+              
+  </script>
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
