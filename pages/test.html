@@ -28,32 +28,64 @@
         <div class="container-fluid">
             <div class="row">
                 <section id="seek-top" class="scnav">
+                  
+                   <div class="col-lg-6 col-lg-offset-3">
+                        <h1 class="text-center toptext"> Patient</h1>
+                    </div>
                      
-                    <div class="col-md-5 dropdown">
+                    <div class="col-md-2 col-md-offset-1 dropdown">
   <button class="btn-seek dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
     <img class="seek-logo" src="../assets/imgs/Seek-Heartv2.png">
     <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu2">
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dr. Who</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Home</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign Out</a></li>
       
   </ul>
 </div>
-                    <div class="col-md-2">
-                        <h1 class="text-center toptext"> Patient</h1>
-                    </div>
                    </section>
             </div>
             <div class="row">
               <div id="seek-main" class="mcontent">
-      <form method="get" action="/search" id="search">
-  <input name="q" type="text" size="40" placeholder="Search..." />
-</form>
+                <nav class="" role="">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="">
+				<button type="button" class="e" data-toggle="collapse" data-target="">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="">
+				<ul class="">
+				<form class="seek" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button id="seek-info" type="submit" class="seek-btn btn-default">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search...</span>
+								</span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+    
+                  
+                  <div class="fluid-container"></div>
+    
                     
                 
-<!--End of mainc-->
+<!--            End of mainc-->
           </div> 
 <script>
               
@@ -72,8 +104,7 @@
 			$form.addClass('active');
 			$input.focus();
 		});
-		// ONLY FOR DEMO // Please use $('form').submit(function(event)) to track from submission
-		// if your form is ajax remember to call `closeSearch()` to close the search container
+		//  use $('form').submit(function(event)) to track from submission
 		$(document).on('click', '.navbar-collapse form[role="search"].active button[type="submit"]', function(event) {
 			event.preventDefault();
 			var $form = $(this).closest('form'),
