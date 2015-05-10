@@ -16,4 +16,4 @@ Seek
   - phpMyAdmin (Online database management)
 
 
- For complete setup, please refer to
+ For complete setup on a linux or mac machine/virtual machine, please refer to the link : http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
