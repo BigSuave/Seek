@@ -1,0 +1,157 @@
+  <html>
+    <head>
+    <!--  Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+        
+    <!-- JQUERY LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/theBoot/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/theBoot/css/font-awesome.css">
+    <!-- CUSTOME CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/landingPage.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/patient.css"></link>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script href="assets/theBoot/js/bootstrap.js"></script>
+
+    	<title>Scope!</title>
+    </head>
+    <body id="seek-txt">
+
+<div class="container-fluid">
+            <div class="row">
+                <section id="seek-top" class="scnav">
+                  
+                   <div class="col-lg-6 col-lg-offset-3">
+                        <h1 class="text-center toptext"> Patient</h1>
+                    </div>
+                     
+                    <div class="col-md-2 col-md-offset-1 dropdown">
+  <button class="btn-seek dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    <img class="seek-logo" src="assets/imgs/Seek-Heartv2.png">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu2">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dr. Who</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Home</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign Out</a></li>
+      
+  </ul>
+</div>
+                   </section>
+            </div>
+<!--Start of Main Cntent-->
+          
+         
+<div id="seek-main">
+      <nav class="" role="">
+		<div class="container">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="">
+				<ul class="">
+				<form class="seek" role="search">
+					<div class="input-group ">
+						<input type="text" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button id="seek-info" type="submit" class="seek-btn btn-default">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search...</span>
+								</span>
+							</button>
+						</span>
+					</div>
+				</form>
+              </ul>
+			</div><!-- /.navbar-collapse -->
+          </div>
+	 </nav>
+    
+                  
+    <div class="row">
+      
+        <div id="seek-pat">
+          <div class="row col-md-offset-1">
+            <div class="pat-img">
+              <h2 class="pat-name"> Full Name </h2>
+              <img src="assets/imgs/face-placeholder-male.jpg" class="img-thumbnail" alt="Cinque Terre">
+              <div class="pat-info text-left pull-right">
+                <p> Last Seen </p>
+                <p> Home Hospital </p>
+                <p> Notes </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div id="seek-pat2">
+        <div class="row">
+            <div><h2 class="pat-name col-sm-offset-1"> Basic Information </h2>
+              <div class="se-content">
+                <h1 class="col-md-offset-1">A whole bunch of shit will go in here</h1>
+              </div>
+          </div>
+        </div>
+      
+      </div><!-- /row 1 pat 1 -->
+      
+  </div>
+      
+      
+      
+     
+    </div> <!--End of main-->
+</div> <!-- End of container-fluid -->
+<script>
+              
+               $(function () {
+		function closeSearch() {
+            var $form = $('.navbar-collapse form[role="search"].active')
+    		$form.find('input').val('');
+			$form.removeClass('active');
+		}
+
+		// Show Search if form is not active // event.preventDefault() is important, this prevents the form from submitting
+		$(document).on('click', '.navbar-collapse form[role="search"]:not(.active) button[type="submit"]', function(event) {
+			event.preventDefault();
+			var $form = $(this).closest('form'),
+				$input = $form.find('input');
+			$form.addClass('active');
+			$input.focus();
+		});
+		//  use $('form').submit(function(event)) to track from submission
+		$(document).on('click', '.navbar-collapse form[role="search"].active button[type="submit"]', function(event) {
+			event.preventDefault();
+			var $form = $(this).closest('form'),
+				$input = $form.find('input');
+			$('#showSearchTerm').text($input.val());
+            closeSearch()
+		});
+    });
+              
+  </script>
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
