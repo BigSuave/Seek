@@ -26,7 +26,7 @@ case $yn in
  
     [Yy]* ) sudo forever stopall;
 			
-			sudo forever start server.js;
+			sudo forever start ../server.js;
  
             echo "Started general hosting server for seek" 
  
