@@ -19,12 +19,7 @@
 }
 
 .mcontent {
-    margin: 0px auto;
-    margin-top: 20px;
-    height:800px;
-    width: 1600px;
-/*    border: 1px solid black;*/
-    overflow-x: scroll;
+    
 }
 
 .way {
@@ -118,6 +113,11 @@ display:inline-block;
     border-bottom-right-radius: 10px;
     -webkit-box-shadow: 3px 3px 20px 3px rgba(92,92,92,.2);
     box-shadow:     1px 9px 40px 6px rgba(92,92,92,.5);
+    margin: 0px auto;
+    margin-top: 20px;
+    max-width: 1600px;
+    overflow-x: hidden;
+    height: 1000px;
 }
 
 #seek-top {
