@@ -1,22 +1,29 @@
-
-// My requie statements
-var mysql = require('mysql');
-
-// Connect to the server
+var express    = require("express");
+var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : '< MySQL username >',
-  password : '< MySQL password >',
-  database : '<your database name>'
+  user     : 'root',
+  password : '',
+  database : 'address_book'
+});
+var app = express();
+
+connection.connect(function(err){
+if(!err) {
+    console.log("Database is connected ... \n\n");  
+} else {
+    console.log("Error connecting database ... \n\n");  
+}
 });
 
-connection.connect();
-
-connection.query('SELECT * from < table name >', function(err, rows, fields) {
+app.get("/",function(req,res){
+connection.query('SELECT * from user LIMIT 2', function(err, rows, fields) {
+connection.end();
   if (!err)
     console.log('The solution is: ', rows);
   else
     console.log('Error while performing Query.');
+  });
 });
 
-connection.end();
+app.listen(3000);
