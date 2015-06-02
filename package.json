@@ -4,10 +4,12 @@
   "description": "Seek ====",
   "main": "generatepkgJSON.js",
   "dependencies": {
-    "http": "^0.0.0",
-    "express": "^4.12.4",
     "connect": "^3.3.5",
-    "mysql": "^2.7.0"
+    "express": "^4.12.4",
+    "http": "^0.0.0",
+    "mysql": "^2.7.0",
+    "serve": "^1.4.0",
+    "serve-static": "^1.9.3"
   },
   "devDependencies": {},
   "scripts": {
