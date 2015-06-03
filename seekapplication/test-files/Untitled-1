@@ -1,0 +1,29 @@
+N=begin
+<div class="row">
+                        <div class="vit-btns">
+                            <div id="seek-space" class="col-md-2 vit-btn col-md-offset-2">
+                                <section id="lp-circle" class="seek-dia-btn sc-subtext">
+                                    <a class="cpd-text" href="#vitals"> <p class="text-center">Vitals</p></a>
+                                </section>
+                            </div>
+                            <div id="seek-space" class="col-md-2">
+                                <section id="lp-circle" class="seek-dia-btn sc-subtext">
+                                    <a class="cpd-text" href="#"><p class="text-center"> Urinanlysis</p> </a>
+                                </section>
+                            </div>
+                            <div id="seek-space" class="col-md-2">
+                                <section id="lp-circle" class="seek-dia-btn">
+                                    <a href="#"> <p class="cpd-text text-center"> Pregnancy </p> </a>
+                                </section>
+                            </div>
+                            <div id="seek-space" class="col-md-2">
+                                
+                                <section id="lp-circle" class="seek-dia-btn sc-subtext">
+                                     <a href="#">
+                                        <p class="cpd-text text-center"> CBC</p>
+                                    </a>
+                                </section>
+                                
+                            </div>
+                        </div>
+=end
