@@ -35,12 +35,17 @@
             $("#diag-nfobx").hide();
             $("#pat-nfobx").fadeToggle();
             
+        });
+        
+        $("#pre-btn").click(function() {
+            $("#pre-nfobx").fadeToggle();
+            
         });    
     });
     
         </script>
     </head>
-    <body id="seek-txt">
+    <body>
 
         <div class="container-fluid">
              <div class="row">
@@ -70,7 +75,7 @@
                         
                     </div>
                       <div class="pre-box">
-                        <a class="text-center">
+                        <a id="pre-btn" class="text-center" href="">
                             <p>
                                 <img class="cons-hme" src="assets/icons/pre(diag%20page).png">
                                 <p class="text-center">Prescribe</p>
@@ -83,22 +88,22 @@
                                 <p class="text-center">Publish</p>
                         </a>
                     </div>
-                    
-
             </div>
+                
+                <!--  Hidden Container #Diag-nfobx-->
                 <div class="contatiner-fluid">
                  <div class="row">
                     <div id="diag-nfobx" class="col-md-offset-5">
                             <div class="row">
-                            <div id="diag-info" class="col-md-6 text-center">
+                            <div id="vit-info" class="col-md-6 text-center">
                                 <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
+                                <img class="cons-vit" src="assets/icons/Vitals.png">
                                 <p class="text-center">Vitals</p>
                                 
                                 </div>
-                            <div id="vit-info" class="col-md-6 text-center">
+                            <div id="uri-info" class="col-md-6 text-center">
                                 <p>
-                                <img class="cons-diag" src="assets/icons/Urin.png">
+                                <img class="cons-uri" src="assets/icons/Urin.png">
                                 <p class="text-center">Urinalysis</p>
                                 
                                 </div>
@@ -112,7 +117,7 @@
                             </div>
                             <div id="vit-info" class="col-md-6 text-center">
                                 <p>
-                                <img class="cons-diag" src="assets/icons/Pre.png">
+                                <img class="cons-cbc" src="assets/icons/Pre.png">
                                 <p class="text-center">CBC</p>
                                 
                             </div>
@@ -120,72 +125,61 @@
                     </div>
                 </div>
             </div>
-<!--  Hidden Container #Diag-nfobx-->
-            <div class="contatiner-fluid">
-                 <div class="row">
-                    <div id="diag-nfobx" class="col-md-offset-5">
-                            <div class="row">
-                            <div id="diag-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Vitals</p>
-                                
-                                </div>
-                            <div id="vit-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Urinalysis</p>
-                                
-                                </div>
-                        </div>
-                        <div id="seek-topspc" class="row">
-                            <div id="diag-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Pregnancy</p>
-                                
-                            </div>
-                            <div id="vit-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">CBC</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
                 
 <!--Hidder Containers #pat-nfobx-->
                 <div class="contatiner-fluid">
                  <div class="row">
                     <div id="pat-nfobx" class="col-md-offset-5">
-                            <div class="row">
-                            <div id="diag-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Vitals</p>
-                                
-                                </div>
-                            <div id="vit-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Urinalysis</p>
-                                
-                                </div>
-                        </div>
-                        <div id="seek-topspc" class="row">
-                            <div id="diag-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">Pregnancy</p>
-                                
+                        <div class="row">
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div> 
                             </div>
-                            <div id="vit-info" class="col-md-6 text-center">
-                                <p>
-                                <img class="cons-diag" src="assets/icons/Vitals.png">
-                                <p class="text-center">CBC</p>
-                                
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Hidder Containers #pre-nfobx-->
+                <div class="contatiner-fluid">
+                 <div class="row">
+                    <div id="pre-nfobx" class="col-md-offset-5">
+                        <div class="row">
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div> 
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
