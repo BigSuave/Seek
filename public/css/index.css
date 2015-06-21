@@ -1,0 +1,36 @@
+
+.col-md-1 {
+ position: relative;
+  min-height: 1px;
+  right: 60px;
+}
+
+
+.in-main-c {
+position: absolute;
+  margin-top: 370px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: sans-serif "lato";
+}
+    
+}
+
+.ra-bar {
+    height:800px;
+    width: 1600px;
+    border: 1px solid black;
+    overflow-x: scroll;
+}
+
+.seek-in-btn {
+    font-family: 'Lato', sans-serif;
+   
+    border-radius: 20px;
+	width: 500px;
+	height: 100px; 
+    margin: 30px auto;
+    position: relative;
+    
+}
