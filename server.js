@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var mongoose = require('mongoose');
+
+var db = mongoose.connection;
 
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
