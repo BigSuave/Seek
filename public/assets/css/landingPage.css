@@ -1,0 +1,193 @@
+body {
+    font-family: 'Lato', sans-serif!important;
+    font-weight: 400!important;
+    background: #666666!important;
+}
+
+
+.Scnav {
+    position: relative;
+    height: 110px;
+    width: 100%;
+}
+
+.scnav {
+    background: #333333;
+    margin: 0 auto;
+    height: 110px;
+    width: 100%;
+    
+}
+
+.toptext { 
+    font-size: 50px;
+    font-family: sans-serif "lato";
+        
+}
+
+.mcontent {
+    
+}
+
+.way {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight:400 ;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.cpd-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*Universal Styles*/
+.sc-circle-center {
+    font-weight: 700;
+   
+    border-radius: 5%;
+	width: 150px;
+	height: 150px; 
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/*End of U.S*/
+
+.pent-text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); ;
+}
+
+.pharm-text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+    color: inherit;
+}
+
+.dropdown:hover .dropdown-menu {
+display:inline-block;
+}
+
+
+.sc-center {
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#lp-circle {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 12pt;
+    font-weight: 300;
+   
+/*
+  -webkit-transition: all 300ms ease cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms ease cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms ease cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+*/
+
+    transition: all 1.5s ease;
+}
+
+#lp-circle:hover, #lp-circle:active{
+    background: rgba(58,129,186,.8);
+    color: white;
+
+}
+
+#seek-main {
+    margin: 0px auto;
+    max-width: 1600px;
+    overflow-x: hidden;
+    height: 1000px;
+}
+
+#seek-top {
+    background-color: #cccccc;
+    max-width: 100%;
+    height: 195px;
+}
+
+#se-top {
+    padding: 70px 90px 90px;
+    width: 511px;
+    height: 297px;
+    background-color: rgba(0,0,0,.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top:30%;
+    margin-left: 24%;
+}
+
+
+
+a:hover, a:active, a:focus {
+  outline: 0;
+    text-decoration:none;
+}
+
+
+.seek-logo {
+    height: 35px;
+}
+
+.seek-btn {
+    background: #ff5d40;
+    color: white;
+    font-family: sans-serif "lato";
+    font-size: 20px;
+    font-stretch: expanded;
+    display: block;
+    width: 100%;
+    letter-spacing: 6px;
+}
+}
+
+
+
+.btn-seek {
+    color: #6496c8;
+background: rgba(0,0,0,0);
+  float: right;
+
+}
+
+button{
+    outline: 0;
+    border: 0;
+}
+
+#main-txt {
+    color:white;
+    text-align: center;
+}
+
+.cons-hme{
+    width:75px;
+}
+
+.seek-ml {
+  width: 5%;
+    margin-left: 225px;
+    margin-top: 100px;
+}
+

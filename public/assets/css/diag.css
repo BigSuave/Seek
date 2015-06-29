@@ -1,0 +1,205 @@
+
+.seek-dia-btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+	width: 300px;
+	height: 90px; 
+}
+
+#seek-space {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.vit-btns {
+    margin-left: 50px
+}
+
+li{
+    display: inline;
+
+}
+
+#sectionA {
+    float: right;
+}
+
+.bs-example {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+#vit-content {
+  display: inline-block;
+}
+
+.vit-nav {
+  position: relative;
+}
+.diag-con-bg{
+    margin-left:170px;
+    width:300px;
+    background: #333333;
+    height: 70%;
+    position: fixed;
+    
+}
+
+.diag-con-bgv2{
+    margin-left:170px;
+    width:300px;
+
+    background: #333333;
+
+    
+}
+.diag-box{
+    background: black;
+    width: 300px;
+    height: 125px;
+    margin-top: 130px;
+    padding-top: 25px;
+   
+}
+
+.pat-box{
+    background: black;
+    width: 300px;
+    height: 125px;
+    margin-top: 30px;
+    padding-top: 25px;
+   
+}
+
+.pre-box{
+    background: black;
+    width: 300px;
+    height: 125px;
+    margin-top: 30px;
+    padding-top: 25px;
+   
+}
+.pub-box{
+    background: black;
+    width: 300px;
+    height: 125px;
+    margin-top: 30px;
+    padding-top: 15px;
+   
+}
+.diag-boxv2{
+    background: black;
+    width: 300px;
+    height: 150px;
+    
+   
+}
+.seek-space{
+    padding-bottom: 100px;
+}
+
+.cons-diag{
+    width: 25%;
+}
+
+.cons-prgo{
+    width: 45px;
+}
+#diag-nfobx{
+    display:none;
+    margin-top: 10%;
+    color: white;
+    font-size: 15px;
+   
+}
+#diag-info{
+    width: 325px;
+    height: 175px;
+    background: #1F1F1F;
+    margin-right: 20px;
+    padding: 50px;
+     border-radius: 15px;
+}
+
+#diag-prgo{
+    width: 325px;
+    height: 175px;
+    background: #1F1F1F;
+    margin-left:21px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+#vit-info{
+    width: 325px;
+    height: 175px;
+    background: #1F1F1F;
+    margin-left: 20px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+#uri-info{
+    width: 325px;
+    height: 175px;
+    background:#1F1F1F;
+    margin-left: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#seek-topspc{
+    margin-top: 20px;
+}
+
+#pat-nfobx{
+    display:none;
+    margin-top: 7%;
+    color: white;
+    font-weight:300!important;
+}
+
+#pre-nfobx{
+    display:none;
+    margin-top: 7%;
+    color: white;
+    font-weight:300!important;
+}
+
+.pat-stats{
+    width: 700px;
+    height: 150px;
+    background: #1F1F1F;
+    border-radius: 10px;
+}
+
+img.ps-icon{
+    width: 170px;
+    margin-left:30px;
+    margin-top: 20px;
+}
+
+.pat-fn{
+    padding-top: 75px;
+    
+}
+
+.cons-cbc{
+    width: 45%;
+}
+
+.cons-uri{
+    width:25%;
+}
+
+.cons-vit{
+    width:40%;
+}

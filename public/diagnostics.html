@@ -1,0 +1,208 @@
+<html>
+    <head>
+    <!--  Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+        
+    <!-- JQUERY LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/theBoot/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/theBoot/css/font-awesome.css">
+    <!-- CUSTOME CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/landingPage.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/diag.css"></link>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script href="assets/theBoot/js/bootstrap.js"></script>
+
+      <title>Scope!</title>
+<script>
+    
+    $(document).ready(function(){
+
+        $("#diag-btn").click(function() {
+            $("#pat-nfobx").hide();
+            $("#diag-nfobx").fadeToggle();
+        });    
+        
+        $("#pat-btn").click(function() {
+            $("#diag-nfobx").hide();
+            $("#pat-nfobx").fadeToggle();
+            
+        });
+        
+        $("#pre-btn").click(function() {
+            $("#pre-nfobx").fadeToggle();
+            
+        });    
+    });
+    
+        </script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+             <div class="row">
+                <section id="seek-top" class="scnav" ng-app="">
+                    <img class="seek-ml" src="assets/icons/seek-main-trial.png">
+                </section>
+            </div>
+  
+            <div class="row">
+                <div class="diag-con-bg">
+                    <div class="diag-box">
+                        <a id="diag-btn" class="text-center" href="#">
+                            <p>
+                                <img class="cons-diag" src="assets/icons/diag.png">
+                            <p class="text-center">Diagnostics</p>
+                           
+                        </a>
+                    </div>
+            
+            
+                    <div class="pat-box">
+                        <a id="pat-btn" class="text-center" href="#">
+                            <p>
+                                <img class="cons-hme" src="assets/icons/pat.png">
+                                <p class="text-center">Patient</p>
+                        </a>
+                        
+                    </div>
+                      <div class="pre-box">
+                        <a id="pre-btn" class="text-center" href="">
+                            <p>
+                                <img class="cons-hme" src="assets/icons/pre(diag%20page).png">
+                                <p class="text-center">Prescribe</p>
+                        </a>
+                    </div>
+                      <div class="pub-box">
+                        <a class="text-center">
+                            <p>
+                                <img class="cons-hme" src="assets/icons/Pub.png">
+                                <p class="text-center">Publish</p>
+                        </a>
+                    </div>
+            </div>
+                
+                <!--  Hidden Container #Diag-nfobx-->
+                <div class="contatiner-fluid">
+                 <div class="row">
+                    <div id="diag-nfobx" class="col-md-offset-5">
+                            <div class="row">
+                            <div id="vit-info" class="col-md-6 text-center">
+                                <p>
+                                <img class="cons-vit" src="assets/icons/Vitals.png">
+                                <p class="text-center">Vitals</p>
+                                
+                                </div>
+                            <div id="uri-info" class="col-md-6 text-center">
+                                <p>
+                                <img class="cons-uri" src="assets/icons/Urin.png">
+                                <p class="text-center">Urinalysis</p>
+                                
+                                </div>
+                        </div>
+                        <div id="seek-topspc" class="row">
+                            <div id="diag-prgo" class="col-md-6 text-center">
+                                <p>
+                                <img class="cons-prgo" src="assets/icons/Prego.png">
+                                <p class="text-center">Pregnancy</p>
+                                
+                            </div>
+                            <div id="vit-info" class="col-md-6 text-center">
+                                <p>
+                                <img class="cons-cbc" src="assets/icons/Pre.png">
+                                <p class="text-center">CBC</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                
+<!--Hidder Containers #pat-nfobx-->
+                <div class="contatiner-fluid">
+                 <div class="row">
+                    <div id="pat-nfobx" class="col-md-offset-5">
+                        <div class="row">
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div> 
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Hidder Containers #pre-nfobx-->
+                <div class="contatiner-fluid">
+                 <div class="row">
+                    <div id="pre-nfobx" class="col-md-offset-5">
+                        <div class="row">
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div> 
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="pat-stats">
+                                <div id="ps-img">
+                                <img class="ps-icon col-md-2" src="assets/icons/pat.png">
+                                    <h4 class="pat-fn col-md-offset-4">Last Name,First Name</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
